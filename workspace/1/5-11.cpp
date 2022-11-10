@@ -19,5 +19,5 @@ int main() {
         }
     }
 
-    cout << ares << " " << bres << "" << cres <<endl; 
+    cout << ares << " " << bres << " " << cres <<endl; 
 }
