@@ -15,7 +15,7 @@ int main() {
                 continue;
             }
 
-            if (10000 * a + 5000 * b + 1000 * c) {
+            if (10000 * a + 5000 * b + 1000 * c == Y) {
                 ares = a;
                 bres = b;
                 cres = c;
