@@ -11,6 +11,14 @@ int main() {
     for (int i = 0; i < N; ++i) {
         cin >> A[i];
     }
-    long long sum = accumulate(A.begin(), A.end(), 0);
-    cout << sum;
+    const long long rem = T % accumulate(A.begin(), A.end(), 0ll);
+    long long sum = 0;
+    for (int i = 0; i < N; ++i) {
+        if (sum + A[i] > rem) {
+            cout << i + 1 << ' ' << rem - sum << endl;
+            return 0;
+        }
+        sum += A[i];
+    }
+    return 0;
 }
