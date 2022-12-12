@@ -12,4 +12,6 @@ int main() {
     cout << a % b << endl;
     cout << abs(a) << endl;
     cout << pow(a, b) << endl;
+    cout << sqrt(a) << endl;
+    return 0;
 }
