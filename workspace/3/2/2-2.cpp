@@ -13,5 +13,8 @@ int main() {
     cout << abs(a) << endl;
     cout << pow(a, b) << endl;
     cout << sqrt(a) << endl;
+    cout << (a & b) << endl;
+    cout << (a | b) << endl;
+    cout << (a ^ b) << endl;
     return 0;
 }
