@@ -1,18 +1,18 @@
 #include <iostream>
-#include <vector>
+#include <string>
 using namespace std;
 
 int main() {
-    int N, X;
-    cin >> N >> X;
-    vector<int> P(N);
-    for (int i = 0; i < N; ++i) {
-        cin >> P[i];
-    }
-    for (int i = 0; i < N; ++i) {
-        if (P[i] == X) {
-            cout << i + 1 << endl;
+    string S;
+    cin >> S;
+    int answer = -1;
+    for (int i = S.size()-1; i >= 0; --i) {
+        if (S[i] == 'a') {
+            answer = i+1;
+            cout << answer << endl;
             return 0;
         }
     }
+    cout << answer << endl;
+    return 0;
 }
