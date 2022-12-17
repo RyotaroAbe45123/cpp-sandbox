@@ -14,8 +14,8 @@ int main() {
     for (int x = 0; x < N-1; ++x) {
         for (int y = x + 1; y < N; ++y) {
             bool check = true;
-            for (int i = 0; i < M; ++i) {
-                if (S[x][i] != 'o' and S[y][i] != 'o') {
+            for (int j = 0; j < M; ++j) {
+                if (S[x][j] != 'o' and S[y][j] != 'o') {
                     check = false;
                 }
             }
