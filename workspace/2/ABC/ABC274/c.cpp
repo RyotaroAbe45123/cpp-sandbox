@@ -9,12 +9,14 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> a[i];
     }
-    for (int i = 0; i < 2 * n + 1; ++i) {
+    cout << 0 << endl;
+    for (int i = 0; i < n; ++i) {
         int ans = 0;
         while (a[i] > 0) {
             a[i] /= 2;
             ++ans;
         }
+        cout << ans << endl;
         cout << ans << endl;
     }
 }
