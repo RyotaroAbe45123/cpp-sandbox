@@ -5,11 +5,17 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    string a = "0123456789ABCDEF";
-    if (n < 16) {
-        cout << '0' << a[n%16] << endl;
+    int a, b;
+    a = n / 16, b = n % 16;
+    if (a < 10) {
+        cout << a;
+    } else {
+        cout << (char)('A' + a-10);
     }
-    else {
-        cout << a[n/16] << a[n%16] << endl;
+    if (b < 10) {
+        cout << b;
+    } else {
+        cout << (char)('A' + b-10);
     }
+    return 0;
 }
