@@ -16,4 +16,5 @@ int main() {
     else if (y % 4 == 3) {
         cout << y + 3 << endl;
     }
+    return 0;
 }
