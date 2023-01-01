@@ -11,7 +11,8 @@ int main() {
     else if (s.size() == 2) {
         cout << s + s + s << endl;
     }
-    else {
+    else if (s.size() == 3) {
         cout << s + s << endl;
     }
+    return 0;
 }
