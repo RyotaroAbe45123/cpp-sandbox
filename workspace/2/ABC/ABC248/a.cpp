@@ -6,16 +6,16 @@ using namespace std;
 int main() {
     string s;
     cin >> s;
-    sort(s.begin(), s.end());
-    // cout << s << endl;
-    // return 0;
-    for (int i = 0; i < s.size(); i++) {
-        // cout << s.at(i) << endl;
-        // break;
-        if (s.at(i) != to_string(i)) {
-            cout << s.at(i) << endl;
-            cout << (char) i << endl;
-            break;
+    bool flag[10];
+    for (int i = 0; i < 10; i++) {
+        flag[i] = true;
+    }
+    for (int i = 0; i < 9; i++) {
+        flag[(int)(s[i] - '0')] = false;
+    }
+    for (int i = 0; i < 10; i++) {
+        if (flag[i]) {
+            cout << i << endl;
         }
     }
     return 0;
